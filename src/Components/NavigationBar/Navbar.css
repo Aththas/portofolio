@@ -1,0 +1,130 @@
+.navbar-container{
+    margin-top: 2vh;
+    width: 100%;
+    height: 7.5vh;
+    background-color: #333533;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease;
+}
+.hidden {
+    color: transparent !important;
+    text-shadow: none;
+}
+
+.navbar-container .name{
+    padding-left: 5vw;
+    transition: color 0.3s;
+}
+.header{
+    color: white;
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 0, 0.6); 
+    font-size: 1rem;
+
+}
+
+.navbar-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    height: 5vh;
+
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.navbar-container ul li{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 6.8vw;
+    z-index: 1;
+}
+
+.navbar-container ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1vh 0;
+    display: block;
+    transition: color 0.3s;
+    margin: auto;
+}
+.navbar-container ul span{
+    position: absolute;
+    margin-right: 27vw;
+    width: 6.8vw;
+    height: 80%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.navbar-container ul li:nth-child(2):hover~span{
+    margin-right: 14.5vw;
+}
+
+.navbar-container ul li:nth-child(3):hover~span{
+    margin-right: 3vw;
+}
+
+.navbar-container ul li:nth-child(4):hover~span{
+    margin-right: -9.5vw;
+}
+
+.navbar-container ul li:nth-child(5):hover~span{
+    margin-right: -23vw;
+}
+
+.navbar-container ul li.hidden {
+    color: transparent;
+}
+
+.navbar-container ul li.hidden a {
+    color: transparent; 
+}
+
+/* @keyframes blink {
+    0% {
+        color: transparent; 
+    }
+    50% {
+        color: white; 
+    }
+    100% {
+        color: transparent; 
+    }
+}
+
+.navbar-container ul li a:hover {
+    animation: blink 0.1s infinite;
+} */
+
+.bulb-on {
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(255, 255, 0, 0.6);
+    border-radius: 50%; 
+    padding: 5px; 
+}
+
+.bulb-off {
+    color: gray;
+}
+
+.light{
+    font-size: 1.5rem;
+    padding-right: 5vw;
+    z-index: 2;
+    cursor: pointer;
+}
+

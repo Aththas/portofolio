@@ -1,0 +1,159 @@
+.hero-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    margin-top: -10vh;
+    background-color: #333533;
+}
+
+.hero-content{
+    max-width: 45vw;
+}
+
+.hero-content h1{
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: crimson;
+}
+
+.hero-content p{
+    color: white;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.hero-content .btn-box{
+    height: 50px;
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: crimson;
+    border: 2px solid crimson;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600; 
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box a:hover {
+    color: crimson;
+}
+
+.btn-box a::before { 
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #333533;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.btn-box a:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+
+.btn-box a:nth-child(2)::before{
+    background-color: crimson;
+}
+
+
+
+.social-icons {
+    position: absolute; 
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    font-size: 20px;
+    color: crimson;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.social-icons a::before { 
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: crimson;
+    z-index: -1;
+    transition: .5s;
+}
+
+.social-icons a:hover::before { 
+    width: 100%;
+}
+
+.social-icons a:hover{
+    color: #333533;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    margin-left: 55vw;
+    margin-top: -55vh;
+    
+}
+
+.img-container img{
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    width: 25vw;
+    height: 25vw;
+
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(1);
+}
+
+.img-container.light-off img {
+    transform: scale(0); 
+    opacity: 0; 
+}
+.img-container img:hover{
+    transform: scale(1.1);
+}
