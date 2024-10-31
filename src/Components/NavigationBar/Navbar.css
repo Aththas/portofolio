@@ -59,29 +59,34 @@
     transition: color 0.3s;
     margin: auto;
 }
-.navbar-container ul span{
+.navbar-container ul .span{
     position: absolute;
-    margin-right: 27vw;
     width: 6.8vw;
+    margin-right: 27vw;
     height: 80%;
     background: linear-gradient(45deg, #4f1919, #ff3333);
     border-radius: 8px;
     transition: 0.5s;
 }
 
-.navbar-container ul li:nth-child(2):hover~span{
+
+.navbar-container ul li:nth-child(1):hover~.span{
+    margin-right: 27vw;
+}
+
+.navbar-container ul li:nth-child(2):hover~.span{
     margin-right: 14.5vw;
 }
 
-.navbar-container ul li:nth-child(3):hover~span{
+.navbar-container ul li:nth-child(3):hover~.span{
     margin-right: 3vw;
 }
 
-.navbar-container ul li:nth-child(4):hover~span{
+.navbar-container ul li:nth-child(4):hover~.span{
     margin-right: -9.5vw;
 }
 
-.navbar-container ul li:nth-child(5):hover~span{
+.navbar-container ul li:nth-child(5):hover~.span{
     margin-right: -23vw;
 }
 

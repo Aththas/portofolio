@@ -55,6 +55,9 @@
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .btn-box a:hover {
@@ -86,7 +89,48 @@
     background-color: crimson;
 }
 
+/* Link animation keyframes */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .appear-first {
+    animation: slideIn 0.5s forwards; 
+    animation-delay: 0.2s; 
+  }
+  
+  .appear-second {
+    animation: slideIn 1s forwards;
+    animation-delay: 0.4s; 
+  }
 
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+.reverse-first {
+    animation: slideOut 0.5s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .reverse-second {
+    animation: slideOut 1s forwards;
+    animation-delay: 0.4s;
+  }
 
 .social-icons {
     position: absolute; 
@@ -111,6 +155,13 @@
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
+    transition: transform 3s ease, opacity 3s ease;
+    transform: scale(1);
+}
+
+.social-icons.light-off a {
+    transform: scale(0); 
+    opacity: 0; 
 }
 
 .social-icons a::before { 
@@ -138,7 +189,6 @@
     height: 100%;
     margin-left: 55vw;
     margin-top: -55vh;
-    
 }
 
 .img-container img{
@@ -146,7 +196,7 @@
     width: 25vw;
     height: 25vw;
 
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 3s ease, opacity 3s ease;
     transform: scale(1);
 }
 
