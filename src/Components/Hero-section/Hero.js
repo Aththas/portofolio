@@ -3,8 +3,12 @@ import './Hero.css';
 import { Link } from 'react-router-dom';
 import myImg from '../img/iam.png';
 
-const Hero = ({ light, setLight }) => {
+const Hero = ({ light, setLight, initial }) => {
   const [displayTexts, setDisplayTexts] = useState(['', '', '']);
+
+  useEffect(()=>{
+    setLight(initial ? false:true);
+  },[])
   
   useEffect(() => {
     const texts = [

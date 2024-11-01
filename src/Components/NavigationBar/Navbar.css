@@ -10,7 +10,7 @@
     align-items: center;
     position: relative; 
     overflow: hidden; 
-    transition: all 0.3s ease;
+    transition: all 3s ease;
 }
 .hidden {
     color: transparent !important;
@@ -19,7 +19,7 @@
 
 .navbar-container .name{
     padding-left: 5vw;
-    transition: color 0.3s;
+    transition: color 3s;
 }
 .header{
     color: white;
@@ -115,9 +115,8 @@
 } */
 
 .bulb-on {
-    color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-                0 0 20px rgba(255, 255, 0, 0.6);
+    color: crimson;
+    filter: drop-shadow(0 0 10px white);
     border-radius: 50%; 
     padding: 5px; 
 }
