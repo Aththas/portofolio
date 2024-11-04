@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Project.css';
 
 const Project = ({ light, setLight }) => {
     console.log(window.innerHeight);
-    useEffect(()=>{
-        setLight(true);
-    },[])
 
     const cards = [
         {

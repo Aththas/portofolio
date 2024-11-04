@@ -6,6 +6,10 @@ import { faLightbulb as fasLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navbar = ({ light, setLight }) => {
+
+    useEffect(()=>{
+        setLight(true);
+    },[])
     
     useEffect(() => {
         document.body.style.overflow = light ? 'auto' : 'hidden';
@@ -20,7 +24,7 @@ const Navbar = ({ light, setLight }) => {
         <ul>
             <li className={!light ? 'hidden':''}><Link to="/home">Home</Link></li>
             <li className={!light ? 'hidden':''}><Link to="/project">Projects</Link></li>
-            <li className={!light ? 'hidden':''}><Link to="/about">About</Link></li>
+            <li className={!light ? 'hidden':''}><Link to="/education">Education</Link></li>
             <li className={!light ? 'hidden':''}><Link to="/contact">Contact</Link></li>
             <li className={!light ? 'hidden':''}><Link to="/experience">Experience</Link></li>
             {light && (

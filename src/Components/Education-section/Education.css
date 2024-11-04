@@ -1,0 +1,134 @@
+.education-container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background-image: url('../img/roadmap12.png');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.timeline{
+    /* background-color: aqua; */
+    width: 100vw;
+}
+
+.timeline-box{
+    /* background-color: #F5F5F5; */
+    width: 25vw;
+    position: relative;
+}
+
+.text-box{
+    background-color: #3A3A3C;
+    color: transparent;
+    width: 20vw;
+    margin: 0 2vh;
+    padding: 2vh 3vh;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    opacity: 0.3;
+    transition: box-shadow 0.3s ease, text-shadow 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+.text-box:hover{
+    opacity: 1;
+    text-shadow: none;
+    color: white;
+    box-shadow: 0px 10px 30px -5px rgba(255, 0, 0, 0.8);
+}
+.timeline-box small{
+    position: absolute;
+    font-size: 0.7rem;
+    color: transparent;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    padding: 1vh 1.5vh;
+    border-radius: 8px;
+    bottom: 70%;
+    left: 70%;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    opacity: 0.2;
+    transition: text-shadow 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+.timeline-box:hover small{
+    color: white;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.timeline-box .traffic{
+    position: absolute;
+    z-index: 2;
+}
+
+.timeline-box:hover .traffic i {
+    filter: 
+        drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9))  
+        drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9))  
+        drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9))  
+        drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9))  
+        drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9))  
+        drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9)) ; 
+
+}
+
+.timeline-box:nth-child(1) .traffic{
+    margin-top: -9.5vh;
+}
+.timeline-box:nth-child(1) .traffic i {
+    font-size: 2rem;
+    margin-left: 24.5vw;
+    opacity: 0.2;
+    transition: filter 0.3s ease;
+}
+.timeline-box:nth-child(2) .traffic{
+    margin-top: -10.5vh;
+}
+.timeline-box:nth-child(2) .traffic i {
+    font-size: 2.5rem;
+    margin-left: -3.5vw;
+    opacity: 0.2;
+    transition: filter 0.3s ease;
+}
+
+.timeline-box:nth-child(3) .traffic{
+    margin-top: -18.3vh;
+}
+.timeline-box:nth-child(3) .traffic i {
+    font-size: 2.75rem;
+    margin-left: 24.75vw;
+    opacity: 0.2;
+    transition: filter 0.3s ease;
+}
+.timeline-box:nth-child(4) .traffic{
+    margin-top: -13.35vh;
+}
+.timeline-box:nth-child(4) .traffic i {
+    font-size: 2.75rem;
+    margin-left: 25.15vw;
+    opacity: 0.2;
+    transition: filter 0.3s ease;
+}
+
+
+
+
+.timeline-box:nth-child(4){
+    margin-left: 12%; 
+    margin-top: 20px;
+}
+.timeline-box:nth-child(3){
+    margin-left: 32.5%;
+    margin-top: 70px;
+}
+.timeline-box:nth-child(2){
+    margin-left: 77.5%;  
+    margin-top: -80px;
+}
+.timeline-box:nth-child(1){
+    margin-left: 27.5%;
+    margin-top: -60px;
+}
