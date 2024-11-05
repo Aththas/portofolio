@@ -58,7 +58,7 @@ const Project = ({ light, setLight }) => {
       <div className="wrapper">
             {cards.map((card,index) => (
                 <>
-                <input key={index} type='radio' name='slide' id={card.id} defaultChecked={true}/>
+                <input key={index} type='radio' name='slide' id={card.id} defaultChecked={false}/>
                 <label key={index} htmlFor={card.id} className={`card ${!light && 'light-off'}`}>
                     <div className="row">
                         <div className="icon">{card.number}</div>
